@@ -1,0 +1,31 @@
+C:\Users\admin>docker login
+docker pull ubuntu
+docker run -it -d ubuntu
+docker images
+docker tag ubuntu kaif47/ubuntu
+docker push kaif47/ubuntu
+docker ps
+
+
+
+
+
+
+FROM php
+COPY ./hello.php ./
+EXPOSE 6969
+CMD ["php","-S","0.0.0.0:6969"]
+
+
+
+hello.php
+<html>
+    <?php echo"hello">
+</html>
+
+
+
+
+docker login
+docker build . -t/username/foldername
+docker run --name=php -p=6969:6969
